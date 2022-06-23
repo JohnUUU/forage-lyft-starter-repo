@@ -8,7 +8,7 @@ from car_factory import CarFactory
 class TestGlissade(unittest.TestCase):
     def test_car_should_be_serviced(self):
         current_date = datetime.today().date()
-        last_service_date = current_date.replace(year = current_date.year - 3)
+        last_service_date = current_date.replace(year = current_date.year - 4)
         current_mileage = 0
         last_service_mileage = 0
 
@@ -17,7 +17,7 @@ class TestGlissade(unittest.TestCase):
 
     def test_bad_battery_only(self):
         current_date = datetime.today().date()
-        last_service_date = current_date.replace(year = current_date.year - 3)
+        last_service_date = current_date.replace(year = current_date.year - 4)
         current_mileage = 0
         last_service_mileage = 0
 
